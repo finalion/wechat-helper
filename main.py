@@ -17,5 +17,5 @@ def reply_msg_isat(msg):
 
 def mail_content(msg):
     return
-itchat.auto_login(hotReload=True, enableCmdQR=True)
+itchat.auto_login(hotReload=True, enableCmdQR=2)  # deploy on digital ocean
 itchat.run()
