@@ -26,7 +26,7 @@ def reply_msg_isat(msg):
         my_time = my_current_time()
         itchat.send(u'%s 群聊 %s 中 %s 发来消息: %s' % (my_time.ctime(),
                                                  msg['ActualUserName'], msg['ActualNickName'], msg['Content']))
-        if 0 <= my_time.hour <= 7:
+        if 0 <= my_time.hour < 7:
             # itchat.send(u'我当前时间为凌晨%d点%d分。您的消息可能不会立即回复。（自动回复）' %
             #             (my_time.hour, my_time.minute))
             return u'@%s 我当前时间为凌晨%d点%d分。您的消息可能不会立即回复。（自动回复）' % (msg['ActualNickName'], my_time.hour, my_time.minute)
