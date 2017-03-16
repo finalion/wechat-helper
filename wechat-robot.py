@@ -1,4 +1,5 @@
 #-*- coding:utf-8 -*-
+import os
 import itchat
 from itchat.content import *
 import pytz
@@ -14,7 +15,7 @@ def my_current_time(timezone='Europe/Helsinki'):
 @itchat.msg_register([TEXT, VIDEO, RECORDING, PICTURE, ATTACHMENT], isGroupChat=False)
 def reply_msg_untime(msg):
     my_time = my_current_time()
-    if 0 <= my_time.hour <= 7:
+    if 0 <= my_time.hour < 7:
         # itchat.send(u'我当前时间为凌晨%d点%d分。您的消息可能不会立即回复。（自动回复）' %
         #             (my_time.hour, my_time.minute))
         return u'我当前时间为凌晨%d点%d分。您的消息可能不会立即回复。（自动回复）' % (my_time.hour, my_time.minute)
@@ -36,5 +37,5 @@ def reply_msg_isat(msg):
 
 def mail_content(msg):
     return
-itchat.auto_login(hotReload=True, enableCmdQR=2)  # deploy on digital ocean
+itchat.auto_login(hotReload=True, enableCmdQR=True, picDir="/home/scripts/wechat-helper/QR.png")  # deploy on digital ocean
 itchat.run()

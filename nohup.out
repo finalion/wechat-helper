@@ -1,0 +1,413 @@
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import itchat
+ImportError: No module named itchat
+Please press confirm on your phone.
+Loading the contact, this may take a little while.
+[3;J[H[2JLogin successfully as 冯亮
+Start auto replying.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 13, in reply_msg_isat
+    print u'%s %s: 您的消息已发送到我的邮箱和个人号，我会及时回复。----自动回复' % (msg['ActualNickName'], msg['FromUserName'])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 13, in reply_msg_isat
+    print u'%s %s: 您的消息已发送到我的邮箱和个人号，我会及时回复。----自动回复' % (msg['ActualNickName'], msg['FromUserName'])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 13, in reply_msg_isat
+    print u'%s %s: 您的消息已发送到我的邮箱和个人号，我会及时回复。----自动回复' % (msg['ActualNickName'], msg['FromUserName'])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-1: ordinal not in range(128)
+
+LOG OUT!
+Please press confirm on your phone.
+Loading the contact, this may take a little while.
+[3;J[H[2JLogin successfully as 冯亮
+Start auto replying.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Start auto replying.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 34, in reply_msg_isat
+    return u'@%s 您的消息已发送到我的邮箱和个人号，我会及时回复。（自动回复）' % (msg['ActualNickName'], msg['FromUserName'])
+TypeError: not all arguments converted during string formatting
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 34, in reply_msg_isat
+    return u'@%s 您的消息已发送到我的邮箱和个人号，我会及时回复。（自动回复）' % (msg['ActualNickName'], msg['FromUserName'])
+TypeError: not all arguments converted during string formatting
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 34, in reply_msg_isat
+    return u'@%s 您的消息已发送到我的邮箱和个人号，我会及时回复。（自动回复）' % (msg['ActualNickName'], msg['FromUserName'])
+TypeError: not all arguments converted during string formatting
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 66, in configured_reply
+    r = replyFn(msg)
+  File "main.py", line 34, in reply_msg_isat
+    return u'@%s 您的消息已发送到我的邮箱和个人号，我会及时回复。（自动回复）' % (msg['ActualNickName'], msg['FromUserName'])
+TypeError: not all arguments converted during string formatting
+
+LOG OUT!
+LOG OUT!
+Start auto replying.
+LOG OUT!
+Please press confirm on your phone.
+Loading the contact, this may take a little while.
+[3;J[H[2JLogin successfully as 冯亮
+Start auto replying.
+Start auto replying.
+Start auto replying.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+Traceback (most recent call last):
+  File "main.py", line 2, in <module>
+    import itchat
+ImportError: No module named itchat
+Please press confirm on your phone.
+Loading the contact, this may take a little while.
+[3;J[H[2JLogin successfully as 冯亮
+Start auto replying.
+LOG OUT!
+Start auto replying.
+Traceback (most recent call last):
+  File "/root/anaconda2/lib/python2.7/site-packages/itchat/components/login.py", line 237, in maintain_loop
+    msgList, contactList = self.get_msg()
+  File "/root/anaconda2/lib/python2.7/site-packages/itchat/components/login.py", line 302, in get_msg
+    r = self.s.post(url, data=json.dumps(data), headers=headers)
+  File "/root/anaconda2/lib/python2.7/site-packages/requests/sessions.py", line 535, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/requests/sessions.py", line 488, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/requests/sessions.py", line 609, in send
+    r = adapter.send(request, **kwargs)
+  File "/root/anaconda2/lib/python2.7/site-packages/requests/adapters.py", line 473, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', BadStatusLine("''",))
+
+LOG OUT!
+Start auto replying.
+[I 00:31:36.801 NotebookApp] Serving notebooks from local directory: /home/notebooks
+[I 00:31:36.802 NotebookApp] 0 active kernels 
+[I 00:31:36.802 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
+[I 00:31:36.802 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 00:31:43.315 NotebookApp] 302 GET / (83.245.225.53) 2.47ms
+[I 00:31:43.449 NotebookApp] 302 GET /tree? (83.245.225.53) 3.02ms
+[W 01:57:42.039 NotebookApp] SSL Error on 9 ('185.25.148.240', 59991): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+Getting uuid of QR code.
+Downloading QR code.
+                                                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MM              MMMM            MMMMMMMMMM  MMMMMM  MM  MMMMMM              MM
+MM  MMMMMMMMMM  MMMM  MMMM    MMMMMMMMMM    MMMMMMMM  MMMMMMMM  MMMMMMMMMM  MM
+MM  MM      MM  MM          MMMM    MM  MM  MMMMMMMM  MM    MM  MM      MM  MM
+MM  MM      MM  MM  MM    MM  MM  MM  MM  MMMMMMMMMM        MM  MM      MM  MM
+MM  MM      MM  MMMM  MM  MMMM  MM  MM            MM    MMMMMM  MM      MM  MM
+MM  MMMMMMMMMM  MMMMMM    MMMM    MM  MMMMMM  MM  MMMM  MMMMMM  MMMMMMMMMM  MM
+MM              MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM              MM
+MMMMMMMMMMMMMMMMMMMM  MMMMMMMM      MMMM    MMMMMM    MM    MMMMMMMMMMMMMMMMMM
+MMMMMMMM    MM    MM    MMMMMMMMMM  MMMM  MM      MMMMMMMMMMMMMMMMMM    MMMMMM
+MMMM  MMMM    MM    MMMMMMMMMMMMMM    MMMM    MMMM    MM    MMMM    MMMM  MMMM
+MMMM  MM        MM    MM    MM  MMMMMMMMMMMM    MM    MM        MMMMMM  MM  MM
+MMMM  MMMMMMMMMM  MMMMMM  MM  MM          MM  MMMM  MM  MM              MM  MM
+MM  MMMM  MM        MM    MMMMMMMMMMMM      MMMM    MMMM    MM    MM  MM    MM
+MMMMMMMM    MMMM      MM      MM    MMMM    MM  MMMMMM        MMMM  MM  MMMMMM
+MMMMMM  MMMMMM    MMMMMM  MMMM    MM  MMMM    MMMM    MM  MM    MM          MM
+MM  MM  MM  MMMMMM  MMMMMM  MMMMMMMMMMMMMM  MM      MMMM  MM  MMMM        MMMM
+MMMMMM    MMMM    MM  MMMMMM      MM  MMMMMM    MMMM  MMMM  MM    MMMM  MM  MM
+MM        MM  MMMMMM  MM  MM      MMMMMM  MMMMMM      MM  MM  MM  MMMMMM  MMMM
+MMMM    MM  MM    MM  MM  MM  MM  MM    MMMM    MM  MMMM  MMMMMM  MMMM  MM  MM
+MMMM  MM  MMMMMM  MM  MM    MM    MM    MMMMMM  MM    MMMMMM  MMMMMM  MMMMMMMM
+MM  MMMM  MM      MM    MM          MMMM      MM        MM      MM    MMMMMMMM
+MMMM  MMMMMMMMMM          MMMMMM    MMMM  MM  MMMM          MMMM    MM  MM  MM
+MMMM    MM  MM  MMMM  MMMMMMMM    MMMMMM  MMMM  MM  MMMM  MMMM  MM  MMMMMM  MM
+MMMMMM        MM      MMMM          MMMMMMMM        MM        MM  MMMM  MM  MM
+MMMMMM    MM    MMMMMMMM    MMMMMMMMMM      MM  MMMM    MM  MM    MM  MMMMMMMM
+MM  MM    MMMMMMMM  MM    MMMM      MMMM      MMMM  MM  MM  MMMMMM  MMMM  MMMM
+MM    MM  MM      MM  MMMMMM  MM  MM  MM    MM  MMMM        MM      MM      MM
+MM  MM  MM    MMMMMMMM  MM  MMMMMMMM    MMMM    MM  MM  MMMM  MMMMMM    MMMMMM
+MM  MMMM  MM          MM  MMMM  MMMM        MM        MMMM          MMMMMMMMMM
+MMMMMMMMMMMMMMMMMM          MMMM      MMMMMM  MM  MM  MMMM  MMMMMM        MMMM
+MM              MM          MM  MMMM    MMMMMMMM  MMMMMMMM  MM  MM      MM  MM
+MM  MMMMMMMMMM  MMMM  MMMMMM            MMMM  MM        MM  MMMMMM    MM  MMMM
+MM  MM      MM  MM  MMMMMMMM    MM      MM  MMMMMM  MMMM            MMMM  MMMM
+MM  MM      MM  MM  MMMM  MMMMMMMMMM  MM  MMMMMMMMMM        MM  MMMM  MMMMMMMM
+MM  MM      MM  MMMM  MM  MM    MM    MM  MMMM  MM  MM  MM  MMMM            MM
+MM  MMMMMMMMMM  MMMMMM      MM  MMMMMM      MM  MMMMMM  MMMMMM  MM  MM      MM
+MM              MMMM  MM  MMMMMMMM    MMMMMM  MMMM  MMMMMM  MM  MMMM  MMMM  MM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Please scan the QR code to log in.
+Log in time out, reloading QR code.
+Getting uuid of QR code.
+Downloading QR code.
+                                                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MM              MMMM  MM        MMMMMM  MM    MMMM  MM  MMMMMM              MM
+MM  MMMMMMMMMM  MMMM  MMMMMMMMMMMMMMMMMM  MMMM  MMMM  MMMMMMMM  MMMMMMMMMM  MM
+MM  MM      MM  MM      MM  MMMM    MM  MM    MMMMMM  MM    MM  MM      MM  MM
+MM  MM      MM  MM  MM  MMMM  MM  MM  MMMM      MMMM        MM  MM      MM  MM
+MM  MM      MM  MMMM  MMMM  MM  MM  MM    MMMMMM  MM    MMMMMM  MM      MM  MM
+MM  MMMMMMMMMM  MMMMMM  MMMM      MM  MMMM  MMMM  MMMM  MMMMMM  MMMMMMMMMM  MM
+MM              MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM              MM
+MMMMMMMMMMMMMMMMMMMM  MMMM    MM    MMMMMMMMMMMMMM    MM    MMMMMMMMMMMMMMMMMM
+MMMMMMMM    MM    MM      MMMM  MM  MMMM  MM  MM    MMMMMMMMMMMMMMMM    MMMMMM
+MMMMMMMMMM    MM    MMMMMMMMMMMMMMMMMMMMMM      MMMM  MM    MMMM    MM    MMMM
+MMMM  MM  MMMM  MM  MMMM    MM    MM    MMMM    MMMM  MM        MM      MM  MM
+MMMM  MM  MM  MM  MM      MM  MMMMMMMM    MM  MMMMMMMM    MM      MM    MM  MM
+MM  MMMMMM  MM      MMMM  MMMMMM  MMMMMM    MMMMMMMMMMMM    MM    MM  MM    MM
+MMMMMMMM      MM              MMMM    MM    MM    MMMM        MMMM  MM  MMMMMM
+MMMMMM  MMMM      MMMMMM  MMMM    MMMM  MM    MM  MM  MM  MM    MM          MM
+MM  MM      MMMMMM  MMMMMM  MMMMMMMMMM  MM  MM    MMMMMM  MM  MMMM        MMMM
+MMMMMM            MM    MMMM    MMMM    MM        MM  MMMM  MM    MMMM  MM  MM
+MMMM      MMMMMM  MM  MM    MM    MMMM        MM      MM  MM  MM  MMMMMM  MMMM
+MM      MM  MM    MM  MM  MMMMMM  MM    MM      MM  MMMM  MMMMMM  MMMM  MM  MM
+MM    MM  MMMMMM  MM  MMMMMMMM    MM    MMMMMMMMMM    MMMMMM  MMMMMM  MMMMMMMM
+MM  MMMM  MM      MM      MMMM      MMMMMMMM  MM        MM      MM    MMMMMMMM
+MMMMMMMMMMMMMMMMMM      MMMMMM      MMMM  MM    MM    MM    MMMM    MM  MM  MM
+MM      MM  MM  MM    MM  MM      MMMMMMMMMMMMMMMM  MMMM  MM    MM  MMMMMM  MM
+MM            MMMMMM  MMMMMM  MM    MMMMMMMM  MM    MM        MM  MMMM  MM  MM
+MMMM      MM      MMMMMMMM  MM  MMMMMM  MM  MM  MMMM    MM  MM        MMMM  MM
+MM  MM      MMMMMM        MMMMMM  MMMMMM      MMMM  MM          MM  MM    MMMM
+MM      MM  MM    MM    MMMM  MM  MM        MM  MMMM        MM  MM  MM      MM
+MM  MMMM    MMMMMMMMMM  MM  MMMMMMMMMM  MMMM    MM  MM    MM  MMMMMM    MMMMMM
+MM  MMMM  MMMM      MMMM  MMMM    MM  MM    MM    MM  MM              MMMMMMMM
+MMMMMMMMMMMMMMMMMM  MM      MMMMMM    MMMMMM  MM  MM  MMMM  MMMMMM        MMMM
+MM              MM    MM    MM  MM    MMMMMMMMMM    MMMMMM  MM  MM      MM  MM
+MM  MMMMMMMMMM  MMMMMM  MMMM    MM      MMMM  MM  MM    MM  MMMMMM    MM  MMMM
+MM  MM      MM  MM  MM  MM      MM      MM  MMMMMM  MMMM            MMMM  MMMM
+MM  MM      MM  MM  MMMMMM    MMMMMM  MM  MMMMMMMMMM        MM  MMMM  MMMMMMMM
+MM  MM      MM  MMMM  MMMMMMMMMMMM    MM        MM  MM  MM  MMMM            MM
+MM  MMMMMMMMMM  MMMMMM      MMMMMMMMMM          MMMMMM  MMMMMM  MM  MM      MM
+MM              MMMM  MMMM  MMMMMM    MMMMMM  MMMM  MMMMMM  MM  MMMM  MMMM  MM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Please scan the QR code to log in.
+Log in time out, reloading QR code.
+Getting uuid of QR code.
+Downloading QR code.
+                                                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MM              MMMM  MM        MMMMMM        MMMM  MM  MMMMMM              MM
+MM  MMMMMMMMMM  MMMM  MM    MMMMMMMMMMMMMMMM    MMMM  MMMMMMMM  MMMMMMMMMM  MM
+MM  MM      MM  MM            MM    MM  MM  MM  MMMM  MM    MM  MM      MM  MM
+MM  MM      MM  MM  MM  MM  MMMM  MM  MM        MMMM        MM  MM      MM  MM
+MM  MM      MM  MMMM  MM    MMMMMM  MM        MM  MM    MMMMMM  MM      MM  MM
+MM  MMMMMMMMMM  MMMMMM    MM      MM  MM  MM  MM  MMMM  MMMMMM  MMMMMMMMMM  MM
+MM              MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM              MM
+MMMMMMMMMMMMMMMMMMMM  MMMMMMMMMM    MMMM  MMMMMMMM    MM    MMMMMMMMMMMMMMMMMM
+MMMMMMMM    MM    MM    MMMM    MM  MMMM  MMMMMM  MMMMMMMMMMMMMMMMMM    MMMMMM
+MMMMMMMMMM    MM    MMMMMMMMMM        MMMM        MM  MM    MM      MM    MMMM
+MMMM      MM    MM  MM      MM      MM  MMMM    MMMM  MM        MMMMMM  MM  MM
+MMMM    MMMMMMMM  MMMM    MM  MMMMMM  MM  MM  MM  MMMM    MM    MMMM    MM  MM
+MM  MM  MMMMMM      MM    MMMMMM  MMMMMM    MMMMMM  MMMM    MM    MM        MM
+MMMMMMMMMMMM  MM    MM        MM            MM  MMMMMM        MMMM  MM  MMMMMM
+MMMMMM    MM      MM      MMMM          MM    MM      MM  MM    MM          MM
+MM  MMMMMM  MMMMMM      MM  MMMMMM  MMMMMM  MM    MMMMMM  MM  MMMM        MMMM
+MMMMMM    MM      MMMMMMMM      MMMMMM  MMMM      MM  MMMM  MM    MMMM  MM  MM
+MM        MM  MMMMMM  MM          MMMM  MM  MMMM      MM  MM  MM  MMMMMM  MMMM
+MM      MM  MM  MM    MM          MM          MMMM  MMMM  MMMMMM  MMMM  MM  MM
+MM  MMMM  MMMMMM      MM  MM  MM  MM        MM  MM    MMMMMM  MMMMMM  MMMMMMMM
+MMMMMMMM  MM                  MM    MMMM    MMMM        MM      MM    MMMMMMMM
+MM  MMMMMMMMMMMM          MM        MMMM    MMMMMM    MM    MMMM    MM  MM  MM
+MM      MM  MM  MM    MMMMMM  MM  MMMMMM  MM  MMMM  MMMM  MMMMMMMM  MMMMMM  MM
+MMMMMM        MM  MM  MM    MM      MMMM  MMMMMM    MM      MM    MMMM  MM  MM
+MMMMMM  MMMM      MMMMMMMM  MMMMMM  MM      MMMMMMMM    MM  MM    MM  MM  MMMM
+MM    MMMM  MMMMMM        MMMMMMMMMM  MM      MMMM  MM        MMMM    MM  MMMM
+MM    MMMMMM      MM    MMMM  MM    MMMM    MM  MMMM      MMMM  MMMM        MM
+MM  MM        MMMMMMMM  MM  MMMMMM    MMMMMM    MM  MM        MM        MMMMMM
+MM  MMMMMM          MMMM  MMMM  MM          MM    MM  MM              MMMMMMMM
+MMMMMMMMMMMMMMMMMM          MMMMMMMMMM  MMMM  MM  MM  MMMM  MMMMMM        MMMM
+MM              MM  MM      MM          MMMMMMMM    MMMMMM  MM  MM      MM  MM
+MM  MMMMMMMMMM  MMMMMM  MMMM      MM  MMMMMM  MM        MM  MMMMMM    MM  MMMM
+MM  MM      MM  MM    MMMM              MMMMMMMMMM  MMMM            MMMM  MMMM
+MM  MM      MM  MM  MM  MM    MMMMMM  MMMM    MMMMMMMM      MM  MMMM  MMMMMMMM
+MM  MM      MM  MMMM  MM  MM    MM    MM      MMMM  MM  MM  MMMM            MM
+MM  MMMMMMMMMM  MMMMMM  MMMM    MMMMMM  MMMM  MMMMMMMM  MMMMMM  MM  MM      MM
+MM              MMMM  MM    MM  MM    MM    MM  MM  MMMMMM  MM  MMMM  MMMM  MM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Please scan the QR code to log in.
+Log in time out, reloading QR code.
+Getting uuid of QR code.
+Downloading QR code.
+                                                  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MM              MMMM    MM  MM  MMMMMM  MM  MMMMMM  MM  MMMMMM              MM
+MM  MMMMMMMMMM  MMMM  MM    MMMMMMMMMMMMMMMMMMMMMMMM  MMMMMMMM  MMMMMMMMMM  MM
+MM  MM      MM  MM      MM  MMMM    MM  MMMM  MMMMMM  MM    MM  MM      MM  MM
+MM  MM      MM  MM  MM    MM  MM  MM  MMMMMMMM  MMMM        MM  MM      MM  MM
+MM  MM      MM  MMMM  MM        MM  MM  MMMMMMMM  MM    MMMMMM  MM      MM  MM
+MM  MMMMMMMMMM  MMMMMM    MM  MM  MM  MMMM  MMMM  MMMM  MMMMMM  MMMMMMMMMM  MM
+MM              MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM  MM              MM
+MMMMMMMMMMMMMMMMMMMM  MMMM    MM    MMMM    MMMMMM    MM    MMMMMMMMMMMMMMMMMM
+MMMMMMMM    MM    MM    MMMM  MMMM  MMMMMMMM  MM    MMMMMMMMMMMMMMMM    MMMMMM
+MMMM  MMMM    MM    MMMMMMMMMMMM  MM  MMMM        MM  MM    MM      MM    MMMM
+MMMM  MMMMMM    MM  MM      MM      MM  MMMM    MM    MM                MM  MM
+MMMM  MMMM  MMMM  MM  MM  MM  MM  MM      MM  MMMMMMMM  MM        MM    MM  MM
+MM  MMMMMM  MM            MMMMMM  MMMMMM    MMMMMMMMMMMM    MM    MM  MM    MM
+MMMMMMMMMMMMMMMM    MMMM      MM    MMMM    MM      MM        MMMM  MM  MMMMMM
+MMMMMM  MM        MMMMMM  MMMM  MM    MMMM    MMMMMM  MM  MM    MM          MM
+MM  MM  MMMM  MMMM  MM  MM  MMMM  MM  MMMM  MM    MMMMMM  MM  MMMM        MMMM
+MMMMMMMM  MM        MM  MMMM      MM  MMMMMM    MMMM  MMMM  MM    MMMM  MM  MM
+MMMM      MM  MM        MMMM      MMMM  MMMM  MM      MM  MM  MM  MMMMMM  MMMM
+MMMM    MM  MM  MMMM  MMMMMMMM    MM          MMMM  MMMM  MMMMMM  MMMM  MM  MM
+MM  MMMM  MMMMMM      MM      MM  MM      MMMMMMMM    MMMMMM  MMMMMM  MMMMMMMM
+MM    MM  MM    MM        MMMMMM    MMMM    MMMM    MM  MM      MM    MMMMMMMM
+MMMM  MMMMMMMMMM  MM                MMMMMMMMMMMMMM          MMMM    MM  MMMMMM
+MM  MM  MM  MM  MMMM  MM    MMMM  MMMMMMMMMM  MMMM  MMMM  MM    MM  MMMMMM  MM
+MMMM          MM      MMMMMMMMMM    MMMM  MMMM      MM        MM  MMMM      MM
+MM  MM    MM    MMMMMMMMMM  MM  MM  MM  MM  MM  MMMM    MMMMMM  MMMM  MMMM  MM
+MM    MMMMMMMMMMMM  MM    MMMM  MMMM  MM        MM  MM  MM    MMMM  MM    MMMM
+MM    MM  MMMM    MM  MMMMMM  MM  MM  MM    MM  MMMM      MMMM    MMMM      MM
+MM  MMMM  MMMMMMMMMMMMMMMM  MMMM  MM  MMMMMM    MM  MM  MM    MMMM      MMMMMM
+MM  MM    MM              MMMM  MM  MM      MM    MM  MM            MM  MMMMMM
+MMMMMMMMMMMMMMMMMM  MM      MMMMMM    MMMMMM  MM  MM  MMMM  MMMMMM        MMMM
+MM              MM  MM      MM  MMMMMMMMMMMMMMMM  MMMMMMMM  MM  MM      MM  MM
+MM  MMMMMMMMMM  MMMM  MMMMMM        MM  MMMM  MMMM      MM  MMMMMM    MM  MMMM
+MM  MM      MM  MM      MMMM    MM  MM  MM  MMMMMM  MMMM            MMMM  MMMM
+MM  MM      MM  MM  MM  MMMM  MMMMMM    MMMMMMMMMMMMMM      MM  MMMM  MMMMMMMM
+MM  MM      MM  MMMM  MMMMMMMMMMMM    MMMM      MM    MMMM  MMMM            MM
+MM  MMMMMMMMMM  MMMMMM        MMMMMMMM  MMMMMMMMMMMMMM  MMMMMM  MM  MM      MM
+MM              MMMM  MMMMMM  MMMM    MMMMMMMMMMMM  MMMMMM  MM  MMMM  MMMM  MM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Please scan the QR code to log in.
