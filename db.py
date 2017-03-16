@@ -8,16 +8,16 @@ connection = pymysql.connect(host='localhost',
 
 
 def insert(data):
-    try:
-        with connection.cursor() as cursor:
+#    try:
+    with connection.cursor() as cursor:
             # Create a new record
-            sql = "INSERT INTO `msg` (`from_username`, `to_username`,`content`,`type`,`create_time`) VALUES (%s, %s,%s,%s,%s)"
-            cursor.execute(sql, data)
+        sql = "INSERT INTO `msg` (`FromUserName`, `ActualNickName`, `ToUserName`,`Text`,`Type`,`CreateTime`) VALUES (%s, %s,%s,%s,%s,%s)"
+        cursor.execute(sql, data)
         # connection is not autocommit by default. So you must commit to save
         # your changes.
-        connection.commit()
-    finally:
-        connection.close()
+    connection.commit()
+#    finally:
+#        connection.close()
 
 
 def query():
@@ -30,3 +30,12 @@ def query():
             print(result)
     finally:
         connection.close()
+
+
+def update_friends():
+    import itchat
+    print itchat.get_friends()
+
+if __name__ == '__main__':
+    update_friends()
+   

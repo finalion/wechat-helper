@@ -14,8 +14,8 @@ def my_current_time(timezone='Europe/Helsinki'):
 
 
 def save_msg(msg):
-    to_store = msg['FromUserName'], msg['ToUserName'], msg['Content'] if msg[
-        'Type'] == 'Text' else msg['Type'], msg['CreateTime']
+    to_store = msg['FromUserName'], msg.get('ActualNickName',None), msg['ToUserName'], msg['Text'] if msg[
+        'Type'] == 'Text' else msg['Type'], msg['Type'], msg['CreateTime']
     db.insert(to_store)
 
 
