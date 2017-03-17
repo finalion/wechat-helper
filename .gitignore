@@ -89,3 +89,5 @@ ENV/
 .ropeproject
 itchat.pkl
 nohup.out
+cmd
+pid.txt

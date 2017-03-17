@@ -8,16 +8,17 @@ connection = pymysql.connect(host='localhost',
 
 
 def insert(data):
-#    try:
-    with connection.cursor() as cursor:
+    try:
+        with connection.cursor() as cursor:
             # Create a new record
-        sql = "INSERT INTO `msg` (`FromUserName`, `ActualNickName`, `ToUserName`,`Text`,`Type`,`CreateTime`) VALUES (%s, %s,%s,%s,%s,%s)"
-        cursor.execute(sql, data)
-        # connection is not autocommit by default. So you must commit to save
-        # your changes.
-    connection.commit()
-#    finally:
-#        connection.close()
+            sql = "INSERT INTO `msg` (`FromUserName`, `ActualNickName`, `ToUserName`,`Text`,`Type`,`CreateTime`) VALUES (%s, %s,%s,%s,%s,%s)"
+            cursor.execute(sql, data)
+            # connection is not autocommit by default. So you must commit to save
+            # your changes.
+        connection.commit()
+    finally:
+        # connection.close()
+        pass
 
 
 def query():
