@@ -1,11 +1,15 @@
 import pymysql
-connection = pymysql.connect(host='localhost',
+
+connection = 0
+try:
+    connection = pymysql.connect(host='localhost',
                              user='root',
                              password='fengliang',
                              db='wechatmsg',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
-
+except:
+    pass
 
 def insert(data):
     try:
@@ -34,9 +38,7 @@ def query():
 
 
 def update_friends():
-    import itchat
-    print itchat.get_friends()
-
+    pass    
 if __name__ == '__main__':
     update_friends()
    
