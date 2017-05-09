@@ -23,16 +23,18 @@ def save_msg(msg):
         'Type'] == 'Text' else msg['Type'], msg['Type'], msg['CreateTime']
     db.insert(to_store)
 
+def is_me(sender_id):
+    return instance.loginInfo['User']['UserName'] == sender_id
 
 @instance.msg_register([TEXT, VIDEO, RECORDING, PICTURE, ATTACHMENT], isGroupChat=False)
 def reply_msg_untime(msg):
     print msg['FromUserName']
-    if msg['FromUserName']=='@6659c61f4438a5d594c0ac14e182d72c': 
+    if is_me(msg['FromUserName']):
         global shell_mode
-        if msg['Text'] == 'shell':
+        if msg['Text'].lower() == 'shell':
             shell_mode = True
             return (u'enter shell mode')
-        if msg['Text'] == 'exit shell':
+        if msg['Text'].lower() == 'exit shell':
             shell_mode = False
             return (u'exit shell mode')
         if not shell_mode:
@@ -42,7 +44,6 @@ def reply_msg_untime(msg):
             return output
    
     if db.connection: save_msg(msg)
-    print 'lasdfasdfasd'
     my_time = my_current_time()
     if 0 <= my_time.hour < 7:
         # itchat.send(u'我当前时间为凌晨%d点%d分。您的消息可能不会立即回复。（自动回复）' %
