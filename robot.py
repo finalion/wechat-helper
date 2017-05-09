@@ -6,8 +6,11 @@ import pytz
 import datetime
 import db
 import json
+import subprocess
 
 instance = itchat.new_instance()
+
+shell_mode = False
 
 def my_current_time(timezone='Europe/Helsinki'):
     tz = pytz.timezone(timezone)
@@ -23,7 +26,21 @@ def save_msg(msg):
 
 @instance.msg_register([TEXT, VIDEO, RECORDING, PICTURE, ATTACHMENT], isGroupChat=False)
 def reply_msg_untime(msg):
-    print msg
+    print msg['FromUserName']
+    if msg['FromUserName']=='@6659c61f4438a5d594c0ac14e182d72c': 
+        global shell_mode
+        if msg['Text'] == 'shell':
+            shell_mode = True
+            return (u'enter shell mode')
+        if msg['Text'] == 'exit shell':
+            shell_mode = False
+            return (u'exit shell mode')
+        if not shell_mode:
+            return
+        output = run_cmd(msg['Text'])
+        if output:
+            return output
+   
     if db.connection: save_msg(msg)
     print 'lasdfasdfasd'
     my_time = my_current_time()
@@ -52,6 +69,32 @@ def save_friends_data(update=False):
     with open('friends.json','wb') as f:
         json.dump(friends,f)
     return friends
+
+def run_cmd(cmd):
+    args = cmd.split(' ')
+    args = [arg for arg in args if arg.strip()]
+    if not args:
+        return 
+    def _format(s):
+        return s.split('\n')
+    try:
+        output = subprocess.check_output(args, stderr=subprocess.STDOUT)
+        return output
+    except OSError as e:
+        # commands with no output
+#         print str(e)
+        if len(args)>1 and args[0]=='cd':
+            os.chdir(args[1])
+            output = 'Switch directory: {}'.format(os.getcwd())
+            return output
+    except subprocess.CalledProcessError as e:
+        print str(e)
+        print e.returncode
+        print e.output
+    except Exception as e:
+        print str(e)
+
+
 
 if __name__ == '__main__':
     instance.auto_login(hotReload=True, enableCmdQR=2,
