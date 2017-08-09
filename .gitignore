@@ -91,3 +91,5 @@ itchat.pkl
 nohup.out
 cmd
 pid.txt
+*.json
+*.png
