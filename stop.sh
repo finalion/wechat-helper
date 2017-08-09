@@ -1,4 +1,4 @@
-pid=`cat /home/scripts/wechat-helper/pid.txt`
+pid=`cat /root/scripts/wechat-helper/pid.txt`
 if ps -p $pid > /dev/null
 then 
     kill -9 $pid

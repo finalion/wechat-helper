@@ -95,11 +95,9 @@ def run_cmd(cmd):
     except Exception as e:
         print str(e)
 
-
-
 if __name__ == '__main__':
-    instance.auto_login(hotReload=True, enableCmdQR=2,
-                  picDir="/home/scripts/wechat-helper/QR.png",
-                  statusStorageDir='/home/scripts/wechat-helper/itchat.pkl')  # deploy on digital ocean
+    instance.auto_login(hotReload=True, #enableCmdQR=2,
+                  picDir="/tmp/QR.png",
+                  statusStorageDir='/root/scripts/wechat-helper/itchat.pkl')  # deploy on digital ocean
     save_friends_data()
     instance.run()
