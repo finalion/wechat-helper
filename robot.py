@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import time
+import matplotlib.pyplot as plt
 
 import itchat
 import pytz
@@ -125,6 +126,24 @@ def ec():
     instance.send(u'wechat exit at %s: %s' %
                   (IDENTITY, time.ctime()), toUserName='filehelper')
 
+
+def save_figure(path='/tmp/msgorder.png'):
+    number = 20
+    results = db.query_msg(number=number)
+    x = range(0, len(results))
+    counts = [each['COUNT(*)'] for each in results]
+
+    def _caption(username):
+        friend = instance.search_friends(userName=username)[0]
+        return friend.get('RemarkName', None) or friend.get('NickName', None) or friend.get('Alias', None)
+
+    ticks = [_caption(each['FromUserName']) for each in results]
+    plt.bar(x, counts)
+    plt.xticks(x, ticks, rotation=90)
+    plt.grid(axis='y')
+    # plt.show()
+    plt.savefig(path)
+
 if __name__ == '__main__':
     instance.auto_login(hotReload=True,  # enableCmdQR=2,
                         picDir=qr_path,
@@ -132,6 +151,7 @@ if __name__ == '__main__':
                         loginCallback=lc,
                         exitCallback=ec)  # deploy on digital ocean
     save_friends_data()
+    save_figure()
     # print type(instance.get_chatrooms())
     # for chatroom in instance.get_chatrooms():
     # print chatroom['NickName'].encode('gbk'), ',   ', chatroom['UserName']

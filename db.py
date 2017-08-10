@@ -3,13 +3,14 @@ import pymysql
 connection = 0
 try:
     connection = pymysql.connect(host='localhost',
-                             user='root',
-                             password='fengliang',
-                             db='wechatmsg',
-                             charset='utf8mb4',
-                             cursorclass=pymysql.cursors.DictCursor)
+                                 user='root',
+                                 password='fengliang',
+                                 db='wechatmsg',
+                                 charset='utf8mb4',
+                                 cursorclass=pymysql.cursors.DictCursor)
 except:
     pass
+
 
 def insert(data):
     try:
@@ -25,6 +26,14 @@ def insert(data):
         pass
 
 
+def query_msg(number=20):
+    sql = "SELECT `FromUserName`, COUNT(*) FROM `msg` WHERE `FromUserName` NOT LIKE '@@%' GROUP BY `FromUserName` ORDER BY COUNT(*) DESC "
+    with connection.cursor() as cursor:
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        return results[:number]
+
+
 def query():
     try:
         with connection.cursor() as cursor:
@@ -38,7 +47,6 @@ def query():
 
 
 def update_friends():
-    pass    
+    pass
 if __name__ == '__main__':
     update_friends()
-   
